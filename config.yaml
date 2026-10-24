@@ -1,0 +1,188 @@
+# Instagram Influencer Username Discovery Configuration
+# Define niches, target counts, initial hashtags, search queries, and runtime settings
+
+niches:
+  technology:
+    target: 250
+    initial_hashtags:
+      - '#technology'
+      - '#tech'
+      - '#technews'
+      - '#gadgets'
+      - '#programming'
+      - '#coding'
+      - '#artificialintelligence'
+    search_queries:
+      - 'technology influencers'
+      - 'tech influencers under 1M followers'
+  fitness:
+    target: 250
+    initial_hashtags:
+      - '#fitness'
+      - '#workout'
+      - '#gym'
+      - '#fitnessmotivation'
+      - '#bodybuilding'
+    search_queries:
+      - 'fitness influencers'
+      - 'fitness influencers under 1M followers'
+  fashion:
+    target: 250
+    initial_hashtags:
+      - '#fashion'
+      - '#style'
+      - '#fashionblogger'
+      - '#drama'
+      - '#runway'
+    search_queries:
+      - 'fashion influencers'
+      - 'fashion influencers under 1M followers'
+  beauty:
+    target: 250
+    initial_hashtags:
+      - '#beauty'
+      - '#makeup'
+      - '#skincare'
+      - '#beautytips'
+    search_queries:
+      - 'beauty influencers'
+      - 'beauty influencers under 1M followers'
+  business:
+    target: 300
+    initial_hashtags:
+      - '#business'
+      - '#entrepreneur'
+      - '#startup'
+      - '#businessmindset'
+      - '#motivation'
+      - '#money'
+    search_queries:
+      - 'business influencers'
+      - 'business influencers under 1M followers'
+  travel:
+    target: 250
+    initial_hashtags:
+      - '#travel'
+      - '#wanderlust'
+      - '#adventure'
+      - '#travelblogger'
+    search_queries:
+      - 'travel influencers'
+      - 'travel influencers under 1M followers'
+  food:
+    target: 250
+    initial_hashtags:
+      - '#foodie'
+      - '#food'
+      - '#restaurant'
+      - '#foodblogger'
+    search_queries:
+      - 'food influencers'
+      - 'food influencers under 1M followers'
+  gaming:
+    target: 250
+    initial_hashtags:
+      - '#gaming'
+      - '#gamer'
+      - '#gameclips'
+      - '#videogames'
+    search_queries:
+      - 'gaming influencers'
+      - 'gaming influencers under 1M followers'
+  photography:
+    target: 250
+    initial_hashtags:
+      - '#photography'
+      - '#photographer'
+      - '#space'
+      - '#astronomy'
+    search_queries:
+      - 'photography influencers'
+      - 'photography influencers under 1M followers'
+  education:
+    target: 250
+    initial_hashtags:
+      - '#education'
+      - '#learning'
+      - '#teach'
+      - '#students'
+    search_queries:
+      - 'education influencers'
+      - 'education influencers under 1M followers'
+  health_wellness:
+    target: 250
+    initial_hashtags:
+      - '#health'
+      - '#wellness'
+      - '#fitnesshealth'
+      - '#selfcare'
+    search_queries:
+      - 'health influencers'
+      - 'health influencers under 1M followers'
+  sports:
+    target: 150
+    initial_hashtags:
+      - '#sports'
+      - '#athlete'
+      - '#sportsnews'
+      - "#olympics"
+    search_queries:
+      - 'sports influencers'
+      - 'sport news channles'
+      - 'sports influencers under 1M followers'
+  music:
+    target: 150
+    initial_hashtags:
+      - '#music'
+      - '#singers'
+      - '#instrumental'
+      - '#orchestra'
+    search_queries:
+      - 'music influencers'
+      - 'music influencers under 1M followers'
+  entertainment:
+    target: 150
+    initial_hashtags:
+      - '#entertainment'
+      - '#tv'
+      - '#movie'
+    search_queries:
+      - 'entertainment influencers'
+      - 'entertainment influencers under 1M followers'
+  art_design:
+    target: 150
+    initial_hashtags:
+      - '#art'
+      - '#design'
+      - '#artist'
+    search_queries:
+      - 'art influencers'
+      - 'art influencers under 1M followers'
+  pets_animals:
+    target: 150
+    initial_hashtags:
+      - '#pets'
+      - '#animals'
+      - '#petlovers'
+    search_queries:
+      - 'pets influencers'
+      - 'pets influencers under 1M followers'
+
+# Runtime settings
+
+runtime:
+  browser:
+    headless: true
+    timeout: 30000
+    args:
+      - '--disable-extensions'
+
+  delays:
+    min: 2
+    max: 4
+
+  max_usernames_per_search: 100
+  max_posts_to_inspect_per_hashtag: 20
+  max_scrolls_per_page: 5
+  max_retries: 3
+  retry_delay: 5

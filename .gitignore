@@ -1,0 +1,28 @@
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Secrets and session data
+.env
+.env.*
+playwright_session.json
+config.local.yaml
+
+# Generated model files
+model/*.pkl
+
+# Generated logs
+*.log
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

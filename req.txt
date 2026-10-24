@@ -1,0 +1,9 @@
+PyYAML
+playwright
+beautifulsoup4
+requests
+tqdm
+lxml
+python-dotenv
+instaloader
+
